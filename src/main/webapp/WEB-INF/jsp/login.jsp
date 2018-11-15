@@ -14,7 +14,7 @@
 <form action="${pageContext.request.contextPath }/loginUser" method="post">
     <input type="text" name="username"><br>
     <input type="password" name="password"><br>
-    <input type="checkbox" name="rememberMe">随便改改 测试GitKraken！！！<br>
+    <input type="checkbox" name="rememberMe">随便改改 测试GitKraken！32！！<br>
     <input type="submit" value="提交">
 </form>
 </body>
