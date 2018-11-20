@@ -20,7 +20,7 @@ import javax.servlet.DispatcherType;
 @EnableScheduling
 public class DemoApplication extends SpringBootServletInitializer {
 
-	@Bean
+	/*@Bean
 	public ErrorPageFilter errorPageFilter() {
 		return new ErrorPageFilter();
 	}
@@ -32,7 +32,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 		filterRegistrationBean.setEnabled(false);
 		return filterRegistrationBean;
 	}
-
+*/
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
