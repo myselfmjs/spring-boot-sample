@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    SUCCESS   123323232
+    SUCCESS
 </body>
 </html>
