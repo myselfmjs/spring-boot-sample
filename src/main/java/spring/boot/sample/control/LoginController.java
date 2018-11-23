@@ -22,6 +22,6 @@ public class LoginController {
     @RequestMapping(value = "init",method = RequestMethod.GET)
     public String init(){
         String str = "2131332";
-        return "/WEB-INF/jsp/success.jsp";
+        return "success";
     }
 }
