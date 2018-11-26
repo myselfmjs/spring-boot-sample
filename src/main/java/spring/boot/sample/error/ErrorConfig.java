@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 /**
  * @Author: majunsheng
  * @Date: 2018/11/23
+ * EmbeddedServletContainerCustomizer SpringBoot 2.0后不支持该组件
+ * 替换为 WebServerFactoryCustomizer接口
  **/
 @Configuration
 public class ErrorConfig {

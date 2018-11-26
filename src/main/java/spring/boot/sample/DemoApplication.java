@@ -16,6 +16,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import spring.boot.sample.filter.MyFilter;
 
 import javax.servlet.DispatcherType;
 import java.util.ArrayList;
@@ -47,6 +48,22 @@ public class DemoApplication extends SpringBootServletInitializer {
 		return filterRegistrationBean;
 	}
 */
+
+	/**
+	 *注册自己的拦截器
+	 * @return
+	 */
+	/*@Bean
+	public FilterRegistrationBean MyFilter(){
+		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
+		filterRegistrationBean.setFilter(new MyFilter());
+		filterRegistrationBean.addUrlPatterns("/*");
+		filterRegistrationBean.setDispatcherTypes(DispatcherType.REQUEST);
+		filterRegistrationBean.setName("MyFilter");
+		return filterRegistrationBean;
+	}*/
+
+
 	@Bean
 	public PropertySourcesPlaceholderConfigurer loadPropertyPlaceholderConfigurer() {
 		PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();

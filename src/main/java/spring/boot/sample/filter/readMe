@@ -1,0 +1,6 @@
+过滤器(Filter)：通过Filter技术，对Web服务器管理的所有Web资源：例如：jsp，Servlet，静态图片文件或html文件等
+               进行拦截，从而实现一些特殊功能：URL级别的权限访问、过滤敏感词汇、压缩响应等信息
+
+
+    实现Filter 接口，响应的处理
+    加到容器中，从而实现功能 springboot用：FilterRegistrationBean

@@ -12,15 +12,15 @@ import javax.servlet.ServletException;
  * @Author: majunsheng
  * @Date: 2018/11/20
  **/
-@Order(2)
-public class MyWebApplicationInitializer  implements WebApplicationInitializer{
+@Order(1)
+public class MyWebApplicationInitializer02 implements WebApplicationInitializer{
 
-    private Logger logger= LoggerFactory.getLogger(MyWebApplicationInitializer.class);
+    private Logger logger= LoggerFactory.getLogger(MyWebApplicationInitializer02.class);
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
 
-        logger.info("启动加载自定义的MyWebApplicationInitializer");
-        System.out.println("启动加载自定义的MyWebApplicationInitializer");
+        logger.info("启动加载自定义的MyWebApplicationInitializer02");
+        System.out.println("启动加载自定义的MyWebApplicationInitializer02");
     }
 }
