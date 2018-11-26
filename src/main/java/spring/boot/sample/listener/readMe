@@ -1,0 +1,23 @@
+2、Listener接口分类
+ServletContext监听器
+1.1> ServletContextListener监听ServletContext对象
+
+1.2> ServletContextAttributeListener监听对ServletContext属性的操作，比如增加、删除、修改
+
+HttpSession监听器
+2.1> HttpSessionListener监听Session对象
+
+2.2> HttpSessionAttributeListener监听Session中的属性操作
+
+2.3> HttpSessionActivationListener监听HTTP会话的active和passivate情况，passivate是指非活动的session被写入持久设备（比如硬盘），active相反。
+注意：HttpSessionActivationListener不需要web.xml配置文件
+
+2.4> HttpSessionBindingListener监听器：感知Session绑定的事件监听器
+注意：HttpSessionBindingListener不需要web.xml配置文件
+
+
+
+ServletRequest监听器
+3.1> ServletRequestListener监听Request对象
+
+3.2> ServletRequestAttributeListener监听Requset中的属性操作

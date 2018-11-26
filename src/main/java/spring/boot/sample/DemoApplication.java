@@ -3,9 +3,7 @@ package spring.boot.sample;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.embedded.ErrorPage;
-import org.springframework.boot.context.embedded.FilterRegistrationBean;
-import org.springframework.boot.context.web.ErrorPageFilter;
+import org.springframework.boot.context.embedded.ServletListenerRegistrationBean;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,11 +12,9 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.http.HttpStatus;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import spring.boot.sample.filter.MyFilter;
+import spring.boot.sample.listener.MyHttpSessionListener;
 
-import javax.servlet.DispatcherType;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,6 +59,27 @@ public class DemoApplication extends SpringBootServletInitializer {
 		return filterRegistrationBean;
 	}*/
 
+
+	/*@Bean
+	public ServletListenerRegistrationBean myServletRequerstListener(){
+		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
+		listenerBean.setListener(new ServletRequestListener01());
+		return listenerBean;
+	}
+
+	@Bean
+	public ServletListenerRegistrationBean mySequestAttributerListener(){
+		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
+		listenerBean.setListener(new ServletRequestAttributerListener01());
+		return listenerBean;
+	}
+*/
+	@Bean
+	public ServletListenerRegistrationBean myHttpSessionListener(){
+		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
+		listenerBean.setListener(new MyHttpSessionListener());
+		return listenerBean;
+	}
 
 	@Bean
 	public PropertySourcesPlaceholderConfigurer loadPropertyPlaceholderConfigurer() {

@@ -22,8 +22,17 @@ public class MyFilter implements Filter {
 
         HttpServletRequest httpReqeuest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
-        String url = httpReqeuest.getRequestURI();
 
+        //新增一个属性，测试Listener 是否会监听
+        httpReqeuest.setAttribute("add","add");
+
+        httpReqeuest.setAttribute("remove","remove");
+        httpReqeuest.setAttribute("remove","remove again");
+
+        httpReqeuest.removeAttribute("remove");
+
+
+        String url = httpReqeuest.getRequestURI();
         String addr = httpReqeuest.getRemoteAddr();
         int post = httpReqeuest.getRemotePort();
         String host =  httpReqeuest.getRemoteHost();
@@ -33,14 +42,16 @@ public class MyFilter implements Filter {
         //web 项目的根路径
         String strUrl = httpReqeuest.getContextPath();
 
-        System.out.println("url:"+ url);
+       /* System.out.println("url:"+ url);
         System.out.println("post:"+ post);
         System.out.println("host:"+ host);
         System.out.println("addr:"+ addr);
         System.out.println("localAddr:"+ localAddr);
         System.out.println("localName:"+ localName);
         System.out.println("localPost:"+ localPost);
-        System.out.println("strUrl:"+ strUrl);
+        System.out.println("strUrl:"+ strUrl);*/
+
+        filterChain.doFilter(httpReqeuest,servletResponse);
     }
 
     @Override
