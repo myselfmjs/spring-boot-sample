@@ -10,7 +10,7 @@ import spring.boot.sample.common.Interceptor.LoginInterceptor;
  * @Date: 2018/11/27
  * 配置类
  **/
-@Configuration
+//@Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     /**

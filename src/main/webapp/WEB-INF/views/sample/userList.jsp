@@ -55,12 +55,8 @@
     function actionRenderer(e) {
         var r = e.record;
         var h = '';
-		<shiro:hasPermission name="sample:user:save">
 		h += '<a onclick="editRow(\'' + r.uid + '\')" class="grid-button">修改</a> '
-		</shiro:hasPermission>
-		<shiro:hasPermission name="sample:user:del">
         h += '<a onclick="deleteRow(\'' + r.uid + '\')" class="grid-button">删除</a> ';
-		</shiro:hasPermission>
         return h;
     }
 

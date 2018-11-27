@@ -1,4 +1,4 @@
-package spring.boot.sample.error;
+package spring.boot.sample.common.error;
 
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;

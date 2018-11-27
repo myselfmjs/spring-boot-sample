@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------自定义-----------------------------------------------------------------------*/
+/*-----------------------框架 kate-----------------------*/
+.body_bg{background:#f5f5f5;}
+.topmenu{width:100%; margin:0 auto; overflow:hidden; clear:both;background:#069dd5; height:72px;min-width:1200px;}
+.topmenu_L,.topmenu_R{width:50%; height:72px; float:left; overflow:hidden;}
+.topmenu_L img{width:40%; height:auto; max-width:267px;margin-top:10px;margin-left:20px;}
+.qixian,.yonghuming,.shezhi{height:auto; float:left; overflow:hidden;font-family:Arial,"微软雅黑"; font-size:14px; color:#FFF;margin-top:38px;}
+.metro .qixian{width:26%;font-family:Arial,"微软雅黑"; }
+.metro .yonghuming>div{font-family:"微软雅黑"; }
+.metro .shezhi>div{font-family:"微软雅黑"; }
+.qixian img{width:14px; height:14px; margin-right:5px; vertical-align:top; margin-top:3px;}
+.yonghuming{width:44%;}
+.shezhi{width:30%;}
+.k_touxiang{width:14px; height:14px; margin-right:5px; vertical-align:top; margin-top:3px;}
+.float_left{float:left;	}
+.jiantou{ margin-left:2px;}
+.time_day{width:14px; height:14px;vertical-align:top; margin-top:3px;color:#0F0;}
+.time_day_warning{color:#F00;}
+.topmenu_exit{margin-left:5px; display:inline-block;}
+.topmenu2{width:100%;margin:0 auto; overflow:hidden; clear:both;background:#eeeeee; height:45px; border-bottom:1px solid #e5e5e5;padding-left:1%; padding-right:1%;min-width:1200px;}
+.k_tab{width:100%; height:45px; margin:0 auto; overflow:hidden; clear:both;border-right:1px solid #e5e5e5;}
+.cp_logo1{width:20%; height:45px; float:left; overflow:hidden; text-align:center;}
+.cp_logo1 img{width:98%; height:auto; max-width:25px;margin-top:10px;}
+.cp_logo_con{width:80%; height:45px; float:left; overflow:hidden;}
+.cp_logo{width:25%; height:35px; float:left; overflow:hidden; text-align:center;}
+.cp_logo_line1{width:100%; height:10px; margin:0 auto;clear:both; text-align:right;overflow:hidden;}
+.cp_logo_line1 img{width:13px; height:7px; vertical-align:top; margin-top:2px;}
+.cp_logo_line2{width:100%; height:35px; margin:0 auto; overflow:hidden;; clear:both;}
+.cp_logo img{width:98%; height:auto; max-width:25px;}
+.grid .row.no_upmargin{margin-top:0px;}
+.border_R{border-right:1px solid #e5e5e5;}
+.k_contain{width:98%; height:auto; margin:0 auto; overflow:hidden; clear:both; min-width:1200px;margin-bottom:35px;}
+.main_right{background: #fff;}
+#main{background:#fff;min-height: 620px;overflow: hidden;padding: 10px;}
+.k_foot{width:100%; margin:0 auto; overflow:hidden;background:#069dd5; position:fixed; bottom:0px; left:0px; height:35px;font-family:Arial,"微软雅黑"; font-size:14px; color:#FFF; text-align:center; line-height:35px;}
+.k_foot span{font-family:Arial,"微软雅黑";}
+.k_foot a{cursor: pointer;color: #fff;text-decoration:underline;font-family:Arial,"微软雅黑";}
+/*-----------------------框架 kate end----------------------------*/
+
+/*------------左部菜单 kate---------------*/
+.metro .sidebar.light.noborder{border:0px;}
+.metro .sidebar.light.noborder li{border-bottom:0px;border-style:none;font-family:Arial,"微软雅黑";font-size:16px;color:#333; }
+.metro .sidebar.light.noborder ul li ul li{font-size:12px;padding-left:5%;padding-right:5%;}
+.metro .sidebar.light.noborder ul li ul li a{font-family:Arial,"微软雅黑";}
+.metro .grid .row .leftmenu{max-height: 620px; min-height: 620px; overflow-y: auto; border: 1px solid #e5e5e5; background:#FFF;}
+i[class="on-left"] img{ vertical-align:text-top;}
+.metro .sidebar.light.noborder > ul ul li:hover{background: none repeat scroll 0% 0% #00AFF0;}
+.metro .sidebar.light.noborder .dropdown-menu li:hover{background: none repeat scroll 0% 0% #00AFF0;}
+/*------------左部菜单  kate end---------------*/
+
+/*------------页签 kate --------------------*/
+.web_title_img{width:2%;height:45px;overflow:hidden;float:left;}
+.web_title_img img{ vertical-align:middle;height:25px; width:25px;margin-top:10px;}
+.web_title{width:80%;height:45px;overflow:hidden;float:left;}
+.web_title ul{width:auto; height:auto; overflow:hidden;margin:0px;padding-left:0px;}
+.web_title ul li{ list-style-type:none;color:#333;padding-left:10px; padding-right:2px; border-radius:20px;background:rgb(170, 217, 238); float:left;height:28px;min-width:90px; margin:8px 5px;text-align:center; overflow:hidden;border: 1px solid #d5d5d5;}
+.web_title ul li span{ line-height:28px;font-family:Arial,"微软雅黑";font-size:14px;}
+.web_title ul li:not(.current):not(.webt_first):hover{background:#dfe9f8; color:#333; border:1px solid #d5d5d5;}
+.web_title .webt_first{background:#069dd5; color:#fff;border:1px solid #069dd5;}
+.web_title .current{background:#069dd5; color:#fff;border:1px solid #069dd5;}
+.web_title ul li>i{float:right; height:auto;width:15px; cursor:pointer;}
+.web_title ul li>i img{ width:8px;height:7px;margin-top:5px;}
+/*------------页签 kate end---------------*/
+
+/*------------tab kate end---------------*/
+.metro .tab-control .tabs.tabTopBlue > li.active a{border-top: 2px solid #069dd5;font-family:Arial,"微软雅黑";font-size:14px;color:#333;}
+.metro .tab-control .tabs.tabTopBlue > li > a{font-family:Arial,"微软雅黑";font-size:14px;color:#333;}
+.metro .tab-control .tabs.tabTopBlue > li:not(.active):hover a {color:#fff;}
+/*------------tab 2015-3-11 kate end---------------*/
+
+/*------------查询区域 kate-------------------*/
+.metro label {display: block;margin: 5px 0px;font-weight: normal;font-size: 12px;text-align:right;width: 100px;float: left;padding-right: 10px;font-family: Arial,"微软雅黑"; font-size:12px; color:#333;}
+.publicSize {width: 135px;height: 28px;border: 1px solid #E5E5E5;font-family:Arial,"微软雅黑"; font-size:12px;}
+.downlist_chexkBox_con{display:none; position: absolute;}
+.ztree.downlist_chexkBox{margin-top:0; width:135px;height:auto;max-height:150px;margin-left:0px; background:#fff; border:1px solid #e5e5e5;}
+.metro input.ourblue[type="button"]{border-radius: 2px;width: 64px;height: 28px;font-family: "微软雅黑";color: #FFF !important;background-color: #069dd5;}
+.metro input.warning.orange[type="button"]{background-color: #FA6800;font-family: "微软雅黑";color: #FFF !important;width: 64px;height: 28px;border-radius: 2px;margin-left: 30px;}
+.margin_left_20{margin-left:20px;}
+/*------------查询区域 kate end---------------*/
+
+/*------------长文本 kate-------------------*/
+.publicSize_long {width: 270px;height: 28px;border: 1px solid #E5E5E5;font-family:Arial,"微软雅黑"; font-size:12px;}
+.ztree.downlist_chexkBox_long{margin-top:0; width:270px;height:auto;max-height:150px;margin-left:0px; background:#fff; border:1px solid #e5e5e5;}
+.switch_con{ float:left; width:75px; height:auto; overflow:hidden;}
+.switch_con img{ vertical-align:top;width:73px;height:auto;cursor:pointer;}
+.textarea_con{width:100%; height:auto; overflow:hidden; clear:both;}
+.textarea_area{width:100%; height:auto; overflow:hidden; clear:both;}
+.textarea_con textarea{resize:none; border:1px solid #e5e5e5;width: 550px; height:100px;padding: 5px;font-family: "微软雅黑"; font-size:12px;}
+.textarea_con span{display:inline-block; margin:0px 5px; color:red}
+.margin_left_30{margin-left:30px;}
+.metro .textarea_num{width: 550px;height:auto; overflow:hidden; clear:both;font-family: "微软雅黑"; font-size:12px;color:#069dd5; text-align:right;line-height:18px;margin-top:5px;}
+.metro .textarea_num span{color:#069dd5}
+.div_270{width:274px;}
+.metro .rudio_con{float:left;overflow:hidden;}
+.metro .rudio_con span{display:inline-block; margin:0px 6px 0px 3px;font-family:Arial,"微软雅黑"; font-size:12px;color:#333;line-height:28px;}
+.metro .publicSize_signal{display:inline-block;font-family:Arial,"微软雅黑"; font-size:12px;color:#000;}
+.metro .publicSize_signal span{color:red;display:inline-block; margin:0px 5px;}
+.textedit_con{width:100%; height:auto; overflow:hidden; clear:both;}
+.textedit_area{width:100%; height:auto; overflow:hidden; clear:both;}
+.textedit_con textarea{resize:none; border:1px solid #e5e5e5;width:550px; height:100px;padding: 5px;font-family: "微软雅黑"; font-size:12px;visibility:hidden;}
+/*------------长文本 kate end---------------*/
+
+/*------------METRO 2列树形结构 kate-------------------*/
+.metro .row.metro_tree_title{margin-top:10px;margin-bottom:5px;}
+.metro_tree_two{width:100%; padding:0px 25px;}
+.metro_tree_title span{font-weight: bold;font-size: 13px;font-family:Arial,"微软雅黑";margin-left:40px;color:#333;}
+.metro_tree_span5{width:380px;height:auto; overflow:hidden; float:left;}
+.metro_tree_span2{width:140px;height:auto; overflow:hidden; float:left;}
+.metro .treeview li{ list-style-type:none;}
+.metro .treeview.noactive .active {font-weight:normal;color: #333;}
+.metro_tree_two_col{width:405px; height:auto; overflow:hidden;font-size:12px;font-family:Arial,"微软雅黑";color:#333; font-weight:normal;display:inline-block;}
+/*.metro_tree_twoR{width:340px; height:auto;overflow:hidden;font-size:12px;font-family:Arial,"微软雅黑";color:#333; font-weight:normal;display:inline-block;}*/
+.metro .treeview.noactive .node > a{margin-bottom:0px;}
+.metro .treeview.noactive li ul{padding:0px 5px;}
+.metro .treeview.noactive li span,.metro .treeview.noactive li ul li span{font-size:12px;font-family:Arial,"微软雅黑";color:#333;}
+.metro .treeview.noactive i img{ vertical-align:middle;}
+/*------------METRO 2列树形结构  kate-------------------*/
+
+/*------------METRO 3列树形结构 kate-------------------*/
+.metro_tree_three{width:100%; padding:0px 25px;}
+.metro_tree_span4{width:300px;height:auto; overflow:hidden; float:left;}
+.metro_tree_three_col{width:325px; height:auto; overflow:hidden;font-size:12px;font-family:Arial,"微软雅黑";color:#333; font-weight:normal;display:inline-block;}
+.metro_tree_three_col2{width:310px; height:auto; overflow:hidden;font-size:12px;font-family:Arial,"微软雅黑";color:#333; font-weight:normal;display:inline-block;}
+.metro_tree_three_col3{width:317px; height:auto; overflow:hidden;font-size:12px;font-family:Arial,"微软雅黑";color:#333; font-weight:normal;display:inline-block;}
+/*------------METRO 3列树形结构 kate-------------------*/
+
+/*------------ztree 自定义图标的属性列表 kate-------------------*/
+.ztree_L_con{float: left; border: 1px solid #e5e5e5; width: 20%;background:#fff; height:auto; overflow:hidden;}
+.row .ztree_L_tit{width:100%; height:46px; line-height:46px;background:#edf1f9;}
+.row .ztree_L_tit span{font-size:14px;font-family:Arial,"微软雅黑";color:#333; margin:0px 20px;}
+.ztree_L_detail{width:100%; height:auto; overflow:hidden;}
+.ztree.dezTree_L{margin-top:0px;border:0px;background:none;width:100%;height:auto;overflow:auto;}
+.metro .ztree.dezTree_L li span.button.switch:active{ background-color:#fff !important;} 
+/*------------ztree 自定义图标的属性列表 kate-------------------*/
+
+/*------------ztree 增删改树形结构 kate-------------------*/
+.ztree li span.button.add {margin-left:2px; margin-right: -1px; background-position:-144px 0; vertical-align:top; *vertical-align:middle}
+/*------------ztree 增删改树形结构 kate end-------------------*/
+
+/*------------表格 kate ----------------------*/
+.buttondiv{width:100%; height:45px; overflow:hidden; clear:both; border:1px solid #e5e5e5; border-bottom:0px;background: #edf1f9;}
+.metro .buttondiv_a {line-height:30px;margin-top:6px;height:30px;border:1px solid #e5e5e5;background:#FFF;color:#333;margin-left:10px;border-radius:3px;padding:0px 10px;text-align:center;text-decoration: none;display:inline-block; cursor:pointer;font-size:12px;font-family:Arial,"微软雅黑";}
+.metro .buttondiv_a:hover{border:1px solid #069dd5;color:#333;background:#FFF;}
+.metro .buttondiv_a i img{ vertical-align:middle;}
+
+.hidden {display: none !important;visibility: hidden !important;}
+
+.pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {border-bottom-left-radius: 0;border-top-left-radius: 0;}
+.pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;}
+.pagination>.disabled>span, .pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+background-color: #fff;border-color: #ddd;color: #777;cursor: not-allowed;}
+.pagination-sm>li>a, .pagination-sm>li>span {font-size: 11px;padding: 5px 10px;}
+.pagination>li>a, .pagination>li>span {float: left;line-height: 1.42857;position: relative;text-decoration: none;}
+.pagination>li>a, .pagination>li>span {padding: 6px 12px;color: #069dd5;background-color: #FFF;border: 1px solid #DDD;margin-left: -1px;float: left;
+position: relative;text-decoration: none;line-height: 1.42857;}
+.pagination>li {display: inline;}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover,
+.pagination>.active>span:hover, .pagination>.active>a:focus,
+.pagination>.active>span:focus {z-index: 2;color: #FFF;background-color:#069dd5;cursor: default;border-color:#069dd5;}
+
+.tb_imgcon{width:100%; height:auto; overflow:hidden; clear:both;}
+.tb_imgcon i img{ cursor:pointer;}
+
+.dt-grid-container.tb_defult{border:1px solid #e5e5e5;width:100%;border-bottom:0px;}
+.dt-grid-container.tb_defult .table{margin-bottom:0px;}
+.dt-grid-container.tb_defult .table>tbody>tr:hover{background:#dcf8ff;}
+.dt-grid-container.tb_defult>.table{max-width:100%;width:100%;margin-top:0px;}
+.dt-grid-container.tb_defult>.table>tr>th{font-size: 12px;height:30px;line-height:30px;padding-left:8px;padding-right:8px;border-bottom: 1px solid #e5e5e5;}
+.dt-grid-container.tb_defult thead th {text-align: left;font-size:12px;font-family:Arial,"微软雅黑";color:#333;background-color:#f8f8f8;border-bottom: 1px solid #e5e5e5;}
+.dt-grid-container.tb_defult .table>tbody>tr>td{padding:0px 8px;height:32px;line-height:32px;font-size:12px;color:#333;}
+.dt-grid-container.tb_defult tbody td {border-bottom:1px solid #e5e5e5;font-size: 12px;padding-left:8px;padding-right:8px;text-align:left;}
+.metro .dt-grid-container.tb_defult thead th, .metro .table.tb_defult thead td{border-bottom: 1px solid #e5e5e5;}
+.dt-grid tbody tr td .switch_con img{margin-top:4px;}
+.metro .text-primary{color:#069dd5;font-size:14px;font-family:Arial,"微软雅黑";}
+
+.dt-grid-container.tb_defult.have_scroll{border:1px solid #e5e5e5;border-bottom:0px; overflow:auto;white-space:nowrap;}
+.dt-grid-container.tb_defult.have_scroll>.table{min-width:100%;width:auto;max-width:none;margin-top:0px;}
+.dt-grid-container.tb_defult.have_scroll table tr th,.dt-grid-container.tb_defult.have_scroll table tr td{white-space:nowrap;min-width:90px;}
+.dt-grid-toolbar-container.toolbar_defult .pagination a:hover{color:#069dd5;}
+.dt-grid-toolbar-container.toolbar_defult .pagination>.active>a:hover{color:#fff;}
+
+.dt-grid-container.tb_defult>table>tbody>tr.dt-grid-row:nth-child(4n+1){background-color: rgb(255, 255, 255);}
+
+/*------------表格 kate end-------------------*/
+
+/*------------2列布局 kate end-------------------*/
+.publicSize_Middle {width:250px;height: 28px;border: 1px solid #E5E5E5;font-family:Arial,"微软雅黑"; font-size:12px;}
+textarea[class="publicSize_Middle"]{height: 100px; resize:none;font-family:Arial,"微软雅黑"; font-size:12px;}
+div[class="publicSize_Middle"]{min-height:100px;font-family:Arial,"微软雅黑"; font-size:12px; display:inline-block;}
+/*------------2列布局  kate end-------------------*/
+
+/*------------stepper kate-----------------------*/
+.stepper_con{width:950px; height:60px;margin:0 auto; position:relative;}
+.step_line{width:840px;height:1px;border-top:1px dotted #333; position:absolute; left:55px; top:14px; z-index:0;}
+.stepper_con ul{margin-left:0px;padding-left:0px;}
+.stepper_con ul li{width:110px; height:auto; list-style-type:none; position:absolute; z-index:5; top:0px;}
+.metro .step_squre{width:28px; height:28px; margin:0 auto; background:#666; color:#fff;text-align:center;line-height:28px;font-weight:600;font-size:14px;}
+.step_squre.step_current{background:#069dd5;}
+.step_squre:hover{background:#0CF;}
+.step_squre:not(.step_current):hover{background:#999;}
+.metro .step_wen{width:100%; height:auto; margin:0 auto; text-align:center;font-family:Arial,"微软雅黑"; font-size:12px;color:#333;margin-top:10px;}
+.step_li_L{left:0px;}
+.step_li_R{right:0px;}
+.step_li_M{left:420px;}
+.step_li_sec4{left:261.67px;}
+.step_li_thr4{right:261.67px;}
+.step_li_sec5{left:182.5px;}
+.step_li_thr5{right:182.5px;}
+/*------------stepper kate end-------------------*/
+
+
+/*------------全网搜索回复 kate-----------------------*/
+.qw_pl {padding-bottom: 10px;width: 100%;height: auto;overflow: hidden;margin: 0px auto;border: 1px solid #E5E5E5;}
+.metro .qw_pl_tit{width: 100%;height:30px;line-height: 30px;background: none repeat scroll 0% 0% #F5F5F5;border-bottom: 1px solid #E5E5E5;text-align: center;color: #333;font-size:14px;font-family:Arial,"微软雅黑"; font-weight:bold;}
+.qw_pl_tit_check{width:3%;height:30px;line-height: 30px;text-align:center; display:inline-block; float:left;}
+.pl_listcon {width: 100%;height: auto;overflow: hidden;margin: 0px auto;}
+.pl_listcon ul,.pl_listcon ul li{ list-style-type:none;margin-left:0px;padding-left:0px;}
+.pl_listcon li {width:100%;height: auto;overflow: hidden;margin: 0px auto;border-bottom: 1px solid #E5E5E5; word-break:break-all;margin-bottom:20px;padding-bottom:10px;}
+.pl_listcon li:last-child{border:0px;}
+.list_input{width:3%;height:auto;text-align:center; float:left; overflow:hidden;}
+.list_logo{width:7%;height:auto;text-align:center; float:left; overflow:hidden;}
+.list_logo img{width:100%; height:auto; vertical-align:bottom;}
+.list_neirong{width:90%;height: auto;float: left;overflow: hidden;padding-left:1%; padding-right:1%;}
+.metro .pro_name {font-size: 14px;font-weight:bold;}
+.metro .pro_name,.metro .cus_pl,.metro .pl_time {width: 100%;height: auto;overflow: hidden; margin:0 auto;word-break:break-all;color: #333;font-family: Arial,"微软雅黑";}
+.metro .cus_pl,.metro .pl_time{line-height:24px;font-size: 12px;}
+ .pl_time div{float:left;font-family: Arial,"微软雅黑";}
+ .pl_time_num{color:#069dd5;}
+ .pl_answer_con{width:89%;height: auto;overflow: hidden; clear:both; margin-left:11%;}
+ .pl_answer_FAQ{display:inline-block;background:#069dd5;color:#fff;cursor: pointer;padding:10px;}
+ .metro .textarea_numL{width:275px;height:auto; overflow:hidden;font-family: "微软雅黑"; font-size:12px;color:#069dd5; text-align:left;line-height:18px; margin-top:5px; float:left;}
+.metro .textarea_numL span{color:#069dd5}
+.pl_answer_save{width:275px;height:auto; overflow:hidden;font-family: "微软雅黑"; font-size:12px;color:#069dd5; text-align:right;line-height:18px; margin-top:5px; float:left;}
+/*------------全网搜索回复  kate end--------------------*/
+
+/*------------弹出框  kate ----------------------*/
+.window_shadow{min-width:250px;min-height:150px; width:auto;border:1px solid #e5e5e5; background:#fff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);padding-bottom:20px; position:absolute; z-index:1000; left:0px; top:0px;}
+.kate_de{width:340px;}
+.window_title{width:100%; height:32px; border-bottom:1px solid #e5e5e5;padding:0px 5px;}
+.metro .window_title_name{float:left; overflow:hidden;font-family: "微软雅黑"; font-size:14px;color:#333;line-height:32px;}
+.window_title_name i img{margin-top:3px;}
+.window_title_close{float:right; overflow:hidden;}
+.window_title_close i img{margin-top:4px; cursor:pointer;}
+.kate_hang{width:300px;height:auto; overflow:hidden; clear:both; margin:0 auto;margin-top:20px;}
+.window_button{width:100%;height:auto;overflow:hidden; text-align:center;margin-top:20px;}
+.blackcover{width:100%; height:100%; position:fixed; left:0px; top:0px; background:rgba(0,0,0,0.7);z-index:500; display:none;}
+/*------------弹出框  kate end-------------------*/
+
+/*------------粉丝管理 回复记录 kate-----------------------*/
+.clear_float{ overflow:hidden;}
+.fanRecord{width:470px; height:auto; overflow:hidden; clear:both;float:left;}
+.fanRecord_title{font-family: "微软雅黑"; font-size:12px;color:#069dd5;}
+.fanRecord_content{font-family: "微软雅黑"; font-size:12px;color:#333;}
+.de_page_con{width:auto; height:23px; overflow:hidden; clear:both; float:right; margin:20px 0px;margin-right:20px;}
+.de_page_back,.de_page_num,.de_page_input{float:left; overflow:hidden;height:23px; }
+.metro .de_page_num{line-height:23px;font-family: "微软雅黑"; font-size:12px;color:#069dd5;margin:0px 5px;}
+.metro .de_page_num span{color:#069dd5;font-family: "微软雅黑"; font-size:12px;}
+.de_page_input{margin-right:5px;}
+.de_page_back i img{ vertical-align:middle;}
+.de_page_inputWrite{float:left; overflow:hidden;}
+.de_page_inputWrite input[type="text"]{width:30px; height:23px; appearance:none; -webkit-appearance:none;border:1px solid #e5e5e5;}
+.go_button{float:left;width:30px; height:23px;background:#069dd5; text-align:center; line-height:22px; color:#fff;font-family: "微软雅黑"; font-size:12px;}
+
+.fanRecord_tit{width:100%; height:30px; margin:0 auto;border:1px solid #e5e5e5;border-bottom:0px; background:#f5f5f5; line-height:30px;padding:0px 10px;}
+.fanRecord_tit img{ vertical-align:middle; cursor:pointer;}
+.fanRecord_textarea_con{width:100%;height:auto; overflow:hidden; margin:0 auto;}
+.fanRecord_textarea{width:470px;height:200px;appearance:none; -webkit-appearance:none; resize:none;border:0px; outline:none;padding:5px;border:1px solid #e5e5e5;}
+.metro .fan_textarea_numL{width:235px;height:auto; overflow:hidden;font-family: "微软雅黑"; font-size:12px;color:#069dd5; text-align:right;line-height:18px; margin-top:5px; float:left;}
+.metro .fan_textarea_numL span{color:#069dd5}
+.fan_pl_answer_save{width:235px;height:auto; overflow:hidden;font-family: "微软雅黑"; font-size:12px;color:#069dd5; text-align:left;line-height:18px; margin-top:5px; float:left;}
+/*--------粉丝管理——弹出框---------*/
+.fans_dialog_img{width:800px;}
+.pbl_con {margin:0 auto;height:auto;overflow:hidden;clear:both;width:760px; margin-top:20px;}
+.fans_box {margin-bottom: 20px;float: left;width: 240px; border:1px solid #e5e5e5;}
+.fans_box img {width:100%; height:auto;}
+
+/*-------粉丝管理——弹出框 end------*/
+
+/*------------粉丝管理 回复记录 kate end-------------------*/
+
+/*------------群发消息 kate ----------------------*/
+.tb_imgfirst{padding:5px;}
+.tb_imgfirst img{width:60px; height:60px;}
+/*------------群发消息 kate end----------------------*/
+
+/*------------模仿dtgrid的分页 kate ----------------------*/
+.mf_dt_pagecon{width: auto;height: 33px;overflow: hidden;clear: both;float: right;margin-right: 20px;margin-top:5px;margin-bottom:20px;}
+.metro .total_record{width: auto;overflow: hidden;line-height: 33px;float:left; color:#069dd5;font-family: "微软雅黑"; font-size:14px;}
+.metro .total_record span{color:#069dd5;font-family: "微软雅黑"; font-size:14px; margin:0px 5px;}
+.mf_dt_input{width: auto;overflow: hidden;float:left;line-height: 33px;}
+.mf_dt_input select{width:68px; height:24px;padding: 2px 4px; margin:0px 5px;}
+.mf_marginright20{margin-right:20px;}
+.mf_pglist{width: auto;overflow: hidden;float:left;margin-left:13px;}
+.mf_pglist ul{padding-left:0px;padding-top:0px;margin-top:0px;}
+.mf_pglist ul li{ list-style-type:none; width:33px; height:31px; line-height:30px;background:#fff; border:1px solid #DDD; border-right:0px solid #e5e5e5; float:left; text-align:center; color:#069dd5; cursor:pointer;}
+.mf_pglist ul li a{ color:#069dd5; background:#fff;}
+.mf_pglist ul li a:hover{ color:#069dd5; background:#fff;}
+.mf_pglist ul li[class="mf_pglist_current"] a:hover{ color:#fff; background:#069dd5}
+.metro .mf_pglist_current{background:#069dd5;border:1px solid #069dd5;}
+.metro .mf_pglist_current a{background:#069dd5; color:#fff;}
+.mf_pglist ul li:last-child{border-right:1px solid #DDD;}
+/*------------模仿dtgrid的分页 kate end-------------------*/
+
+
+/*---------------------------------------------------自定义 end------------------------------------------------------------------*/
+
+/*------------首页中间内容样式-------------------*/
+.index_renwu{ margin:21px auto 0; width:1000px;}
+.index_renwu p{ font-size:20px; color:#444444;}
+.index_rw_1{ background:#fff; height:100px; box-shadow: 0 0 2px 2px #ececec; margin-top:10px;}
+.index_rw_2{ width:1000px;height:100px;}
+.index_rw_2 li{float:left;height:64px; top:18px;width:332px;position:relative; border-right:1px solid #cccccc;}
+.ra{position:absolute;left:14px;}
+.ra_01{position:absolute;left:90px;height:36px;line-height:36px;}
+.ra_01 span{color:#ff9600; font-size:30px;}
+.ra_01 span.ra_01_02 {font-size: 18px;color: #999;padding-left: 2px;}
+.ra_02{position:absolute;top:40px;left: 164px; font-size:18px;font-size:18px; }
+
+
+
+.clearfix:after  {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix        {display: inline-block;}
+* html .clearfix,
+* html           {height: 1%;}
+.clearfix        {display: block;}
+
+
+.fl{float:left;}
+.fr{float:right;}
+.w1000{width:1000px;margin:0px auto;}
+
+.w1000 dt{height:50px;line-height:50px; font-size:20px; color:#444444;}
+.w1000 dd{}
+
+ul.w1000{height:346px; margin-bottom:120px !important;}

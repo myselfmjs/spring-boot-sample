@@ -1,6 +1,4 @@
-package spring.boot.sample.error;
-
-import org.springframework.context.annotation.Configuration;
+package spring.boot.sample.common.error;
 
 /**
  * @Author: majunsheng

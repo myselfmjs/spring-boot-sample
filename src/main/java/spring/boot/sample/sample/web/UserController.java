@@ -11,7 +11,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import spring.boot.sample.common.controller.BaseController;
+import spring.boot.sample.sample.entity.User;
 import spring.boot.sample.sample.service.UserService;
+
+import java.util.List;
+
 /**
  * 用户表Controller
  * @author majunsheng
@@ -32,4 +36,14 @@ public class UserController extends BaseController {
 
 
 
+    @RequestMapping(value = {"", "form"}, method = RequestMethod.GET)
+    public String form(Model model) {
+        List<User> list = userService.findAll();
+        User user = new User();
+        if (list !=null && list.size()>0){
+            user = list.get(0);
+        }
+        model.addAttribute("user",user);
+        return "sample/userForm";
+    }
 }

@@ -83,7 +83,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 		return listenerBean;
 	}*/
 
-	@Bean(name = "DataSource01", destroyMethod = "close", initMethod = "init")
+	@Bean
 	public DataSource dataSource() {
 		Resource r = new DefaultResourceLoader().getResource("application.properties");
 		Properties properties = new Properties();

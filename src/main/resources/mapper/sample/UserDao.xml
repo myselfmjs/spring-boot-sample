@@ -17,47 +17,9 @@
 		SELECT 
 			<include refid="UserColumns"/>
 		FROM test.user a
-		<where>
-			
-		</where>		
+
 	</select>
-	<!-- 分页模块 -->
-	<sql id="pageFromAndWhere">
-      FROM test.user a
-      <where>
-		
-	  </where>
-    </sql>
 
-    <select id="pageCount" resultType="java.lang.Integer"
-            parameterType="spring.boot.sample.common.model.DataGridSearch">
-        select count(1)
-        <include refid="pageFromAndWhere"/>
-    </select>
-
-
-    <select id="pageList" resultType="spring.boot.sample.sample.entity.User"
-            parameterType="spring.boot.sample.common.model.DataGridSearch">
-        select
-			<include refid="UserColumns"/>
-        <include refid="pageFromAndWhere"/>
-		<choose>
-			<when test="sortField != null and sortField != '' and sortOrder != '' and sortOrder != ''">
-				ORDER BY ${sortField} ${sortOrder}
-			</when>
-			<otherwise>
-			</otherwise>
-		</choose>
-		<choose>
-			<when test="startRecord == 0">
-        	limit #{pageSize}
-			</when>
-			<otherwise>
-        	limit #{startRecord},#{pageSize}
-			</otherwise>
-		</choose>
-    </select>
-	
 	<insert id="insert">
 		INSERT INTO test.user(
 		uid,username,password

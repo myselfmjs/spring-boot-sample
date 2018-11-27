@@ -1,4 +1,4 @@
-package spring.boot.sample.filter;
+package spring.boot.sample.common.filter;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

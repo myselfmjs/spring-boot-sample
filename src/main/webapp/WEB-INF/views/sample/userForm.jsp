@@ -12,19 +12,19 @@
 
 	<table border="0" cellpadding="1" cellspacing="2" class="form-layout">
 		<tr>
-			<td style="text-align: right;width: 30%;">：</td>
+			<td style="text-align: right;width: 30%;">ID：</td>
 			<td>
 				<input id="uid" name="uid" value="${user.uid}" style="width: 60%;" required="true" vtype="int;" placeholder="" class="mini-textbox"/>
 			</td>
 		</tr>
 		<tr>
-			<td style="text-align: right;width: 30%;">：</td>
+			<td style="text-align: right;width: 30%;">Name：</td>
 			<td>
 				<input id="username" name="username" value="${user.username}" style="width: 60%;"  vtype="maxLength:255" placeholder="" class="mini-textbox"/>
 			</td>
 		</tr>
 		<tr>
-			<td style="text-align: right;width: 30%;">：</td>
+			<td style="text-align: right;width: 30%;">Password：</td>
 			<td>
 				<input id="password" name="password" value="${user.password}" style="width: 60%;"  vtype="maxLength:255" placeholder="" class="mini-textbox"/>
 			</td>

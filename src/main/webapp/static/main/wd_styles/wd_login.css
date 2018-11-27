@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,th,img,div,blockquote,dl,dt,dd,blockquote,pre,object,textarea,input{margin:0;padding:0; list-style: none}
+body,input,textarea{font-size:14px;font-family:"\5b8b\4f53",Arial,Tahoma,Helvetica,STHeiti;color:#333;}
+*{ margin:Opx; padding:0px;}
+body{background:url(../login_images/body_bg.jpg) no-repeat center center; background-attachment: fixed;}
+.bg{background:url(../login_images/body_bg_02.jpg) no-repeat center center; background-attachment: fixed;}
+.container{ margin:0px auto; clear:both;height:730px;}
+.clear{ clear:both; overflow:hidden;}
+.head{ width:1000px; margin:0px auto; margin-top:5%; margin-bottom: 30px;}
+.main{ width: 1000px; height:620px; margin: 0px auto; position: relative}
+.conbox{ width: 630px; height: 550px; position: absolute; left: 0px; top: 50%; margin-top:-275px;}
+.conbox img{ width: 94%; height: auto;}
+.login_box{ width: 310px; height: 400px; position: absolute; top: 50%;right:2%; margin-top: -210px; background: #fff; box-shadow: 0px 0px 10px #9a9696; border:1px solid #f8f8f8; border-radius: 3px;}
+.login_title_list{ width: 267px; height: 56px;margin: 0px auto;}
+.login_title_list ul li{ float: left; font-size: 18px; color: #666; width: 50%; text-align: center; line-height: 56px;  border-bottom: 2px solid #dcdcdc}
+.login_title_list ul li{color:#666; text-decoration: none; text-align: center}
+.login_title_list ul li a{ color:#666; text-decoration: none; text-align: center}
+.login_title_list ul .current{ border-bottom: 3px solid #67d05c; color: #67d05c}
+.login_title_list ul .current a{ color:#67d05c}
+
+.login_code{ width: 40px; height: 40px; position: absolute; top: 0px; right: 0px;}
+.login_code p{position: absolute;top:0;right: 0;background: #fff;padding:10px;border:1px solid #ddd;display: block;opacity: 0;transition:all 0.3s ease-in 0s;width: 0;height: 0;overflow: hidden;}
+.login_code p.hover{transition:all 0.3s ease-in 0s;opacity: 1;width: 160px;height: 160px;}
+
+.login_use,.login_pasd,.login_yzm{margin: 0px auto; width: 254px;  height: 40px; border:none; margin-bottom: 30px;}
+.login_use{ margin-top: 10px;}
+.login_use input{width: 214px;  height: 40px; border:1px solid #e4e4e4;background:url(../login_images/icon_use.png) no-repeat 10px center; padding-left: 35px; color: #999; font-size: 16px; outline: none; border-radius: 2px}
+.login_pasd input{width: 214px;  height: 40px; border:1px solid #e4e4e4;background:url(../login_images/icon_key.png) no-repeat 10px center; padding-left: 35px; color: #999; font-size: 16px; outline: none;}
+.login_yzm a{ vertical-align: bottom; color:#2285e7}
+.login_yzm input{ width: 100px; height: 30px; border:1px solid #e4e4e4; margin-right: 10px;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius:2px}
+.login_yzm img{ vertical-align: bottom;}
+.remind_pasd{margin: 0px auto; width: 254px; margin-top: 10px; color: #999}
+.remind_pasd input{ width: 14px; height: 14px; border:1px solid #e4e4e4;border-radius: 2px; -webkit-border-radius: 2px;-moz-border-radius:2px}
+
+.remind_txt { width: 251px; height: 26px; margin: 0px auto; line-height: 26px;  margin-top: 10px; font-size: 12px; margin-bottom: 10px}
+
+.re_add { display: inline; color:#ff6633; border: 1px solid #ff6633; background:#ffdcd1; padding: 3px 10px;}
+
+.loing_bt{width: 254px; margin-top: 10px; color: #999; margin: 0px auto;margin-top: 20px; }
+.loing_bt input{width: 100%;  height: 40px; background: #67d05c; border: none; border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius:2px; font-size: 18px; font-weight: bold; color: #fff;}
+.foot{ text-align: center; color:#ccc;position: fixed;bottom: 30px;width:100%;}
+
+/*----第二页样式--*/
+.pg_box{width: 1000px; height:500px; margin: 0px auto; position: absolute;left:50%; margin-left: -500px; top:50%; margin-top:-250px}
+.page_logo{ width: 100%; height: auto; text-align: center}
+.page_logo img{ width: 34%; text-align: center;}
+.page_choose{ width: 100%; height:auto; clear: both; overflow: hidden; margin-top: 50px}
+.page_choose ul li{ width: 283px;height: 247px; text-align: center;float:left;background: url(../login_images/choose_li_bg.png) no-repeat;margin:0 20px;display: inline;}
+.page_choose ul a{display: block;margin:60px auto 0;width: 130px;height: 43px;line-height: 43px;background: url(../login_images/choose_li_1.png) no-repeat -137px 0;color: #fff;text-decoration: none;padding-top: 90px;}
+.page_choose ul li.gray a{color: #666;}
+.page_choose ul a{background-position: -137px 0;}
+.page_choose ul a:hover{background-position: -293px 0;}
+.page_choose ul .gray a,.page_choose ul .gray a:hover{background-position: 20px 0;cursor: default;}
+.page_choose ul a.li2{background-image: url(../login_images/choose_li_2.png);}
+.page_choose ul a.li3{background-image: url(../login_images/choose_li_3.png);}
+
+
+.show_div{ width:310px; height:auto;box-shadow: 0px 0px 10px #9a9696; border:1px solid #f8f8f8; border-radius: 3px; margin: 0px auto; background: #fff; clear: both; overflow: hidden; padding-bottom:35px;}
+.show_div_cont{ width: 214px; margin: 0px auto;}
+.show_div_cont input{width: 204px;  height: 40px; border:1px solid #e4e4e4; color: #999; font-size: 16px; outline: none; border-radius: 2px; margin: 0px auto; margin-top: 35px; padding-left: 10px;}
+.md_bt{width: 70%; margin-top: 10px; color: #999; margin: 0px auto;margin-top: 20px; text-align: center;}
+.md_bt input{width: 100px;  height: 40px; background: #67d05c; border: none; border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius:2px; font-size: 18px; font-weight: bold; color: #fff; float: left; margin-top: 15px;}
+
+
+.botton_link {
+    width:600px;
+    margin:60px auto;
+}
+.botton_link {
+    text-align:center;
+}
+.botton_link a {
+    margin-left:10px;
+    color:#fff;
+    font-size:12px;
+    text-decoration:none;
+}
+.l-show{ width:260px; height:100px; margin:0px auto; }
+.l-show .l_logo{ width:60px; height:auto; float:left}
+.l-show .l_logo img{ width:100%; height:auto}
+.l_cont{ width:200px; height:60px; color:#fff; float:left; margin-top:3px;}
+.l_cont .name{ height:40px; font-size:28px; font-family:"微软雅黑"}
+.l_cont .de{ font-size:12px; margin-top:5px;}

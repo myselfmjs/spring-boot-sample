@@ -1,4 +1,4 @@
-package spring.boot.sample.initlizer;
+package spring.boot.sample.common.initlizer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

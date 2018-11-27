@@ -1,13 +1,10 @@
-package com.wonders.fampack.common.controller;
+package spring.boot.sample.common.controller;
 
 import com.google.gson.Gson;
-import com.wonders.fampack.common.utils.DateUtils;
-import com.wonders.fampack.fampack.entity.User;
 import org.apache.commons.lang3.StringEscapeUtils;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
+import spring.boot.sample.common.utils.DateUtils;
 
 import javax.servlet.http.HttpServletResponse;
 import java.beans.PropertyEditorSupport;
@@ -24,7 +21,7 @@ public class BaseController {
      *
      * @return
      */
-    public static User getSessionUser() {
+    /*public static User getSessionUser() {
         try {
             Subject subject = SecurityUtils.getSubject();
             User user = (User) subject.getPrincipal();
@@ -32,7 +29,7 @@ public class BaseController {
         } catch (Exception e) {
             return new User();
         }
-    }
+    }*/
     /**
      * 客户端返回JSON字符串
      *
