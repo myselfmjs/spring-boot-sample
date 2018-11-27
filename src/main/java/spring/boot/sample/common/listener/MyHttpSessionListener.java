@@ -1,9 +1,6 @@
-package spring.boot.sample.listener;
-
-import org.springframework.stereotype.Component;
+package spring.boot.sample.common.listener;
 
 import javax.servlet.http.HttpSessionEvent;
-import javax.servlet.http.HttpSession;
 
 /**
  * @Author: majunsheng

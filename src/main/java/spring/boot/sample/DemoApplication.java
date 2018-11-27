@@ -1,9 +1,11 @@
 package spring.boot.sample;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.embedded.ServletListenerRegistrationBean;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,12 +14,13 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import spring.boot.sample.listener.MyHttpSessionListener;
-import spring.boot.sample.listener.ServletRequestListener01;
 
+import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 @Configuration
 @EnableAutoConfiguration
@@ -79,6 +82,33 @@ public class DemoApplication extends SpringBootServletInitializer {
 		listenerBean.setListener(new MyHttpSessionListener());
 		return listenerBean;
 	}*/
+
+	@Bean(name = "DataSource01", destroyMethod = "close", initMethod = "init")
+	public DataSource dataSource() {
+		Resource r = new DefaultResourceLoader().getResource("application.properties");
+		Properties properties = new Properties();
+		try {
+			properties.load(r.getInputStream());
+			return DruidDataSourceFactory.createDataSource(properties);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Bean
+	public SqlSessionFactory sqlSessionFactoryBean(DataSource dataSource) {
+		try {
+			SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+			sqlSessionFactoryBean.setDataSource(dataSource);
+			PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+			sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:/mapper/**/*.xml"));
+			return sqlSessionFactoryBean.getObject();
+		} catch (Exception e) {
+			logger.error("", e);
+		}
+		return null;
+	}
 
 	@Bean
 	public PropertySourcesPlaceholderConfigurer loadPropertyPlaceholderConfigurer() {

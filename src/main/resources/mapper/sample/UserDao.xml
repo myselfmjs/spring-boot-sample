@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.boot.sample.sample.dao.UserDao">
+    
+	<sql id="UserColumns">
+		a.uid AS "uid",a.username AS "username",a.password AS "password"
+	</sql>
+
+	<select id="get" resultType="spring.boot.sample.sample.entity.User">
+		SELECT 
+			<include refid="UserColumns"/>
+		FROM test.user a
+		WHERE a.uid = #{uid}
+	</select>
+
+	<select id="findAll" resultType="spring.boot.sample.sample.entity.User">
+		SELECT 
+			<include refid="UserColumns"/>
+		FROM test.user a
+		<where>
+			
+		</where>		
+	</select>
+	<!-- 分页模块 -->
+	<sql id="pageFromAndWhere">
+      FROM test.user a
+      <where>
+		
+	  </where>
+    </sql>
+
+    <select id="pageCount" resultType="java.lang.Integer"
+            parameterType="spring.boot.sample.common.model.DataGridSearch">
+        select count(1)
+        <include refid="pageFromAndWhere"/>
+    </select>
+
+
+    <select id="pageList" resultType="spring.boot.sample.sample.entity.User"
+            parameterType="spring.boot.sample.common.model.DataGridSearch">
+        select
+			<include refid="UserColumns"/>
+        <include refid="pageFromAndWhere"/>
+		<choose>
+			<when test="sortField != null and sortField != '' and sortOrder != '' and sortOrder != ''">
+				ORDER BY ${sortField} ${sortOrder}
+			</when>
+			<otherwise>
+			</otherwise>
+		</choose>
+		<choose>
+			<when test="startRecord == 0">
+        	limit #{pageSize}
+			</when>
+			<otherwise>
+        	limit #{startRecord},#{pageSize}
+			</otherwise>
+		</choose>
+    </select>
+	
+	<insert id="insert">
+		INSERT INTO test.user(
+		uid,username,password
+		) VALUES (
+		#{uid},#{username},#{password}
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE test.user SET
+		uid = #{uid},username = #{username},password = #{password}
+		WHERE uid = #{uid}
+	</update>
+
+	<delete id="delete">
+		DELETE FROM test.user
+	    WHERE uid = #{uid}
+	</delete>
+
+	
+</mapper>

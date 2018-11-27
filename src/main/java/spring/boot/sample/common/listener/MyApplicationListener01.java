@@ -1,10 +1,7 @@
-package spring.boot.sample.listener;
+package spring.boot.sample.common.listener;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
-
-import javax.servlet.ServletRequestEvent;
-import javax.servlet.ServletRequestListener;
 
 /**
  * @Author: majunsheng

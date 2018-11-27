@@ -1,4 +1,4 @@
-package spring.boot.sample.Interceptor;
+package spring.boot.sample.common.Interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

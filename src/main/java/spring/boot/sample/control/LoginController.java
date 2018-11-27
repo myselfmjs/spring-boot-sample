@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import spring.boot.sample.listener.MyHttpSessionListener;
+import spring.boot.sample.common.listener.MyHttpSessionListener;
 
 /**
  * @Author: majunsheng

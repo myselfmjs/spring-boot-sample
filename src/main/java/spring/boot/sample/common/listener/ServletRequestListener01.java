@@ -1,4 +1,4 @@
-package spring.boot.sample.listener;
+package spring.boot.sample.common.listener;
 
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
