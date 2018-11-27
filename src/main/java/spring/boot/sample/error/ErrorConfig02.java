@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date: 2018/11/26
  * SpringBoot2.0 配置错误页面
  **/
-@Configuration
+//@Configuration
 public class ErrorConfig02 {
 
     /*@Bean

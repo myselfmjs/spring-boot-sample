@@ -1,5 +1,7 @@
 package spring.boot.sample.listener;
 
+import org.springframework.stereotype.Component;
+
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSession;
 
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpSession;
  * @Date: 2018/11/26
  * 监听Session
  **/
+@Component
 public class MyHttpSessionListener implements javax.servlet.http.HttpSessionListener {
 
     public static int online = 0;

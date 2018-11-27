@@ -14,6 +14,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import spring.boot.sample.listener.MyHttpSessionListener;
+import spring.boot.sample.listener.ServletRequestListener01;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +46,6 @@ public class DemoApplication extends SpringBootServletInitializer {
 	}
 */
 
-	/**
-	 *注册自己的拦截器
-	 * @return
-	 */
 	/*@Bean
 	public FilterRegistrationBean MyFilter(){
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
@@ -65,21 +62,23 @@ public class DemoApplication extends SpringBootServletInitializer {
 		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
 		listenerBean.setListener(new ServletRequestListener01());
 		return listenerBean;
-	}
+	}*/
 
+	/*
 	@Bean
 	public ServletListenerRegistrationBean mySequestAttributerListener(){
 		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
 		listenerBean.setListener(new ServletRequestAttributerListener01());
 		return listenerBean;
 	}
-*/
-	@Bean
+	*/
+
+	/*@Bean
 	public ServletListenerRegistrationBean myHttpSessionListener(){
 		ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean();
 		listenerBean.setListener(new MyHttpSessionListener());
 		return listenerBean;
-	}
+	}*/
 
 	@Bean
 	public PropertySourcesPlaceholderConfigurer loadPropertyPlaceholderConfigurer() {
