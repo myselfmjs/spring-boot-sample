@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
  * @Date: 2018/11/26
  * 监听Session
  **/
-@Component
+//@Component
 public class MyHttpSessionListener implements javax.servlet.http.HttpSessionListener {
 
     public static int online = 0;
