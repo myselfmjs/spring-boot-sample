@@ -46,4 +46,9 @@ public class UserController extends BaseController {
         model.addAttribute("user",user);
         return "sample/userForm";
     }
+
+    @RequestMapping(value="json",method = RequestMethod.GET)
+    public String json(Model model){
+        return "Success";
+    }
 }

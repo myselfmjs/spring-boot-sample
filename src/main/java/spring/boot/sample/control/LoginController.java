@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import spring.boot.sample.api.HttpUtils;
 import spring.boot.sample.common.listener.MyHttpSessionListener;
 
 /**
@@ -17,8 +18,8 @@ public class LoginController {
 
     @RequestMapping(value = "json",produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String hello() {
-        return "Hello Spring-Boot";
+    public String hello() throws Exception {
+        return "Hello Spring-Boot 哈哈哈 中文乱码吗";
     }
 
     @RequestMapping(value = "init",method = RequestMethod.GET)
