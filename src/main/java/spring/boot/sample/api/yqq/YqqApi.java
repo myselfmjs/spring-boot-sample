@@ -1,12 +1,15 @@
 package spring.boot.sample.api.yqq;
 
+import com.google.gson.JsonObject;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import spring.boot.sample.api.HttpUtils;
+import sun.misc.BASE64Decoder;
 
 import java.net.URLEncoder;
 
@@ -74,5 +77,34 @@ public class YqqApi {
             e.printStackTrace();
         }
         return result;
+    }
+
+
+    /**
+     * 获取歌词
+     * @param songmid
+     * @return
+     */
+    @RequestMapping(value = "getlyric",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String getlyric(String songmid){
+        String url = "https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg";
+        String referer = "https://y.qq.com/portal/player.html";
+        String param = "ct=24&qqmusic_ver=1298&remoteplace=txt.yqq.center&t=0&aggr=1&cr=1&catZhida=1&platform=yqq&g_tk=5381&format=json&songmid=" + songmid;
+        String result = "";
+        try {
+            result =  HttpUtils.sendGet(url,referer,param);
+            result = StringEscapeUtils.unescapeHtml4(result);
+            int index = result.indexOf("(");
+            int end = result.indexOf(")");
+            result = result.substring(index+1,end);
+            System.out.println(result);
+
+        } catch (Exception e) {
+            result = e.getMessage();
+            e.printStackTrace();
+        }
+        return result;
+
     }
 }
