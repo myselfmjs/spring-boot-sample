@@ -26,9 +26,9 @@ public class Main {
 
     private static void createUser() {
         String schema = "test";
-        String tableName = "user";
+        String tableName = "employee";
         String moduleName = "sample";
-        String className = "User";
+        String className = "Employee";
         Boolean webFlag = true;
         Boolean serviceFlag = true;
         GenUtils.createMain(schema, tableName, moduleName, className, ENTITY_TYPE_GRID,

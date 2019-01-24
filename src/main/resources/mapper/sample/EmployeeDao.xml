@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.boot.sample.sample.dao.EmployeeDao">
+    
+	<sql id="EmployeeColumns">
+		a.id AS "id",a.name AS "name",a.age AS "age"
+	</sql>
+
+	<select id="get" resultType="spring.boot.sample.sample.entity.Employee">
+		SELECT 
+			<include refid="EmployeeColumns"/>
+		FROM test.employee a
+		WHERE a.id = #{id}
+	</select>
+
+	<select id="findAll" resultType="spring.boot.sample.sample.entity.Employee">
+		SELECT 
+			<include refid="EmployeeColumns"/>
+		FROM test.employee a
+		<where>
+			
+		</where>		
+	</select>
+
+
+	<insert id="insert">
+		INSERT INTO test.employee(
+		id,name,age
+		) VALUES (
+		#{id},#{name},#{age}
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE test.employee SET
+		id = #{id},name = #{name},age = #{age}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="delete">
+		DELETE FROM test.employee
+	    WHERE id = #{id}
+	</delete>
+
+	
+</mapper>

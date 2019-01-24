@@ -1,12 +1,10 @@
 package spring.boot.sample.api;
 
-import com.sun.xml.internal.messaging.saaj.util.Base64;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLDecoder;
 
 /**
  * @Author: majunsheng

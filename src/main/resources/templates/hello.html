@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" th:src="@{/static/js/jquery-1.9.1.min.js}"></script>
+</head>
+<body>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<!--写法一 -->
+<p th:text="'Hello！, ' + ${name} + '!'">3333</p>
+<!--写法二 -->
+<p th:text="|Hello! ${name}!|">3333</p>
+
+<table class="mini-toolbar">
+    <thead>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+    </thead>
+    <!--/*@thymesVar id="list" type="java.lang.String"*/-->
+    <tr th:each="prod : ${list}">
+        <td th:text="${prod.id}">123</td>
+        <td th:text="${prod.name}">哈哈</td>
+        <td th:text="${prod.age}">10</td>
+    </tr>
+</table>
+</body>
+
+<script type="text/javascript" th:inline="javascript">
+    var message = [[${name}]];
+    console.log(message);
+    var list = [[${list}]];
+    console.log(list);
+
+    var fristName = $('tr').children('td').eq(2).val();
+    console.log(fristName);
+</script>
+</html>
